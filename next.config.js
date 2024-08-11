@@ -4,6 +4,6 @@ const nextConfig = {
   env: {
     secret: process.env.secret,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
