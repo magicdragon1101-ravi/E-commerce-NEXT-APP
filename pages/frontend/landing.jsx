@@ -13,7 +13,7 @@ export async function getStaticProps() {
   const totalProduct = (await getProductsData()) || [];
 
   // filtering featured products
-  const filterProduct = totalProduct.filter((item) => {
+  const filterProduct = totalProduct?.filter((item) => {
     return item.featured === true;
   });
 

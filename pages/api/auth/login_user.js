@@ -3,7 +3,7 @@ import User from "@/models/User";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-const login_ver = async (req, res) => {
+const login_user = async (req, res) => {
   const data = req.body;
   const { email, password } = data;
 
@@ -40,4 +40,4 @@ const login_ver = async (req, res) => {
   }
 };
 
-module.exports = login_ver;
+module.exports = login_user;
