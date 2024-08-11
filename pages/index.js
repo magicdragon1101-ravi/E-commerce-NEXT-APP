@@ -1,15 +1,11 @@
-import Head from 'next/head'
-import { useEffect } from 'react';
-import Router from 'next/router';
-
-
-
-
+import Head from "next/head";
+import { useEffect } from "react";
+import Router from "next/router";
 
 export default function Home() {
-    useEffect(() => {
-      Router.push('/frontend/landing')
-    },[])
+  useEffect(() => {
+    Router.push("/frontend/landing");
+  }, []);
   return (
     <>
       <Head>
@@ -19,9 +15,5 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     </>
-  )
+  );
 }
-
-
-
-
