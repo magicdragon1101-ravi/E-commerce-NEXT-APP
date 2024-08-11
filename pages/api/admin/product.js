@@ -22,7 +22,6 @@ export default async (req, res) => {
 };
 
 // adding product
-
 const addProduct = async (req, res) => {
   const data = req.body;
   try {

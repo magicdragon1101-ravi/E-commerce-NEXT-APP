@@ -22,7 +22,6 @@ export default async (req, res) => {
 };
 
 // Adding Category
-
 const addCategory = async (req, res) => {
   const data = req.body;
 
@@ -54,7 +53,6 @@ const deleteCategory = async (req, res) => {
 };
 
 // updating Category
-
 const updateCategory = async (req, res) => {
   const data = req.body;
   const id = data._id;

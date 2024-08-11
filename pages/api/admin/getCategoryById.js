@@ -5,6 +5,7 @@ export default async (req, res) => {
   await connectDB();
 
   const { id } = req.query;
+  
   try {
     const data = await Category.findById({ _id: id });
     return res.status(201).send(data);
